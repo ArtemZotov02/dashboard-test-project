@@ -153,7 +153,7 @@ export default function index() {
   ]
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [itemPerPage] = useState(8)
+  const [itemPerPage] = useState(5)
   const [searchQuery, setSearchQuery] = useState('')
 
 
