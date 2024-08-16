@@ -1,5 +1,4 @@
 .main {
-    
     &__list {
         display: flex;
         flex-direction: column;
@@ -7,7 +6,7 @@
             display: flex;
             font-weight: 500;
             padding: 11px 15px; 
-            margin-top: 40px;
+            margin-top: 20px;
             align-items: center;
 
             .icon {
@@ -36,8 +35,14 @@
     .main {
         &__list {
             li {
-                margin-top: 20px;
+                margin-top: 10px;
             }
         }
+    }
+}
+@media (max-height:600px) {
+    .main__list {
+        height: 240px;
+        overflow-y: auto;
     }
 }

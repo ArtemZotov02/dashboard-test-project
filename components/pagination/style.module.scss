@@ -59,3 +59,12 @@
     color: white;
     } 
 }
+
+@media (max-width:550px) {
+    .pagination {
+        flex-direction: column;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
