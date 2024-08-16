@@ -4,7 +4,7 @@
     width: 290px;
     min-height: 100vh;
 
-    padding: 36px 28px 76px;
+    padding: 36px 28px;
     background: white;
     transition: all 0.5s ease;
 
@@ -36,6 +36,8 @@
 .footer {
     margin-top: auto;
     display: flex;
+    position: sticky;
+    bottom: 15px;
     &__user {
         &.active {
             display: flex;
@@ -84,7 +86,7 @@
 @media (max-width:1200px) {
     .headerSection {
         width: 250px;
-        padding: 36px 15px 76px;
+        padding: 36px 15px;
     }
     .header__logo {
         width: 170px;

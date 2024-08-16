@@ -80,8 +80,8 @@ export default function index() {
         },
         {
           name: 'Jake Male',
-          company: 'Microsoft',
-          phone: '(225) 555-0118',
+          company: 'Skype',
+          phone: '(225) 311-5218',
           email: 'jane@microsoft.com',
           country: 'United States',
           status: true,
@@ -89,8 +89,8 @@ export default function index() {
         },
         {
           name: 'Steph Ray',
-          company: 'Yahoo',
-          phone: '(205) 555-0100',
+          company: 'Steam',
+          phone: '(211) 525-0132',
           email: 'floyd@yahoo.com',
           country: 'Kiribati',
           status: false,
@@ -98,8 +98,8 @@ export default function index() {
         },
         {
           name: 'Michael Rolls',
-          company: 'Adobe',
-          phone: '(302) 555-0107',
+          company: 'Instagram',
+          phone: '(312) 002-0507',
           email: 'ronald@adobe.com',
           country: 'Israel',
           status: false,
@@ -108,7 +108,7 @@ export default function index() {
         {
           name: 'Klay Kipper',
           company: 'Tesla',
-          phone: '(252) 555-0126',
+          phone: '(752) 155-0026',
           email: 'marvin@tesla.com',
           country: 'Iran',
           status: true,
@@ -116,8 +116,8 @@ export default function index() {
         },
         {
           name: 'Jerome Jordan',
-          company: 'Google',
-          phone: '(629) 555-0129',
+          company: 'Work.ua',
+          phone: '(619) 855-1529',
           email: 'mjerome@google.com',
           country: 'Réunion',
           status: true,
@@ -125,8 +125,8 @@ export default function index() {
         },
         {
           name: 'Kate Balis',
-          company: 'Microsoft',
-          phone: '(406) 555-0120',
+          company: 'Robota',
+          phone: '(456) 155-5120',
           email: 'kathryn@microsoft.com',
           country: 'Curaçao',
           status: true,
@@ -134,7 +134,7 @@ export default function index() {
         },
         {
           name: 'Jack Jones',
-          company: 'Yahoo',
+          company: 'EaSports',
           phone: '(208) 555-0112',
           email: 'jacob@yahoo.com',
           country: 'Brazil',
@@ -143,8 +143,8 @@ export default function index() {
         },
         {
           name: 'Lui Watson',
-          company: 'Facebook',
-          phone: '(704) 555-0127',
+          company: 'Apple',
+          phone: '(124) 545-0627',
           email: 'kristin@facebook.com',
           country: 'Åland Islands',
           status: false,
@@ -202,12 +202,22 @@ export default function index() {
 
             <PaginationItems currentData={currentData} />
 
-            <Pagination
-              itemPerPage={itemPerPage}
-              totalItems={filteredProducts().length}
-              paginate= {paginate}
-              currentPage={currentPage}
-            />
+            {filteredProducts().length > 0 
+            ?
+            (
+              <Pagination
+                itemPerPage={itemPerPage}
+                totalItems={filteredProducts().length}
+                paginate={paginate}
+                currentPage={currentPage}
+              />
+            )
+            : (
+              <div>
+                <p className={style.notFoundUsers}>Not Found</p>
+              </div>
+            )
+            }
 
         
           </div>
