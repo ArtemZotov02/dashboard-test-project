@@ -1,0 +1,63 @@
+// normalize
+@import './normalize';
+// fonts
+@import './fonts';
+// variable
+@import './variable';
+
+
+/*styles*/
+html {
+
+  font-size: $font-size;
+  min-height: 100%;
+ 
+  &.overflow {
+    height: auto;
+    position: relative;
+    overflow: hidden !important;
+
+    body {
+      height: auto;
+      position: relative;
+      overflow: hidden !important;
+    }
+  }
+}
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+
+  min-width: 320px;
+  margin: auto;
+  background: #f2f3f7;
+
+}
+
+.app {
+  display: flex;
+}
+
+
+main {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 988px;
+}
+
+input,
+button,
+textarea {
+  font-family: $font-family;
+}
+input:-webkit-autofill {
+  transition: all 5000s ease-in-out 0s;
+}
+
+@media (max-width:870px) {
+  main {
+    margin-top: 40px;
+  }
+}

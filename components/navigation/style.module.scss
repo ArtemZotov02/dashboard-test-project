@@ -1,0 +1,43 @@
+.main {
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+        li {
+            display: flex;
+            font-weight: 500;
+            padding: 11px 15px; 
+            margin-top: 40px;
+            align-items: center;
+
+            .icon {
+                margin-right: 14px;
+            }
+            &:hover .main__arrow {
+                transform: translateX(5px); 
+            }
+        }
+    }
+        &__arrow {
+            margin-left: auto;
+            transition: transform 0.3s ease;
+
+        }
+}
+.active {
+    background-color: #5932EA;
+    border-radius: 8px;
+    & span {
+        color: white;
+    }
+}
+
+@media (max-width: 375px) {
+    .main {
+        &__list {
+            li {
+                margin-top: 20px;
+            }
+        }
+    }
+}

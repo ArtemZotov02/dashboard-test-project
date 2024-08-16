@@ -1,0 +1,52 @@
+
+.customersPage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 41px ;
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+.customersBlock {
+    background: white;
+    padding: 30px 38px;
+    border-radius: 30px;
+}
+
+.paginationBlock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    &__title {
+        display: flex;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #EEEEEE;
+        p {
+            width: 16.66%;
+            color: #B5B7C0;
+            text-align: start;
+            
+            &:nth-child(4) {
+                width: 24%;
+            }
+            &:last-child {
+                width: auto;
+            }
+        }
+    }
+}
+@media (max-width:1100px) {
+    .customersBlock {
+        padding: 25px 20px;
+    }
+    .paginationBlock{
+        margin-top: 20px;
+        &__title  p {
+            display: none;
+        }
+        font-size: 12px;
+    }
+}
