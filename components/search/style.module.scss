@@ -59,6 +59,7 @@
 @media (max-width:470px) {
     .searchBlock {
         flex-direction: column;
+        text-align: center;
         &__title {
             margin-bottom: 30px;
         }
